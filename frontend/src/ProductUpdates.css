@@ -1,0 +1,64 @@
+/* Estilos para la página product-updates */
+.page-container {
+  @apply p-8 bg-gray-100 min-h-screen;
+}
+
+.table-container {
+  @apply bg-white p-4 rounded-lg shadow-md mt-6;
+}
+
+.table {
+  @apply min-w-full table-auto border-collapse;
+}
+
+.table th, .table td {
+  @apply px-4 py-2 text-left border-b border-gray-200;
+}
+
+.table th {
+  @apply bg-gray-200 text-lg font-semibold;
+}
+
+.table tbody tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300;
+}
+
+.button-disabled {
+  @apply bg-gray-400 text-gray-700 py-2 px-4 rounded-md cursor-not-allowed;
+}
+
+.error-message {
+  @apply text-red-500 text-sm mt-2;
+}
+
+.loading-message {
+  @apply text-gray-500 text-sm mt-2;
+}
+
+.modal {
+  @apply fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center;
+}
+
+.modal-content {
+  @apply bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/3;
+}
+
+.modal-header {
+  @apply flex justify-between items-center;
+}
+
+.modal-header h2 {
+  @apply text-xl font-semibold;
+}
+
+.modal-close-button {
+  @apply bg-red-500 text-white py-1 px-2 rounded-full hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300;
+}
+
+.modal-body {
+  @apply mt-4;
+}
